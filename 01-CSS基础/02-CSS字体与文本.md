@@ -107,9 +107,7 @@ p {
 按需查看，没必要记
 
 - `auto`：默认值。浏览器根据当前情况自动确定鼠标光标类型。
-
 - `pointer` ：IE6.0，竖起一只手指的手形光标。就像通常用户将光标移到超链接上时那样。
-
 - all-scroll :　 IE6.0 有上下左右四个箭头，中间有一个圆点的光标。用于标示页面可以向上下左右任何方向滚动。
 - col-resize :　 IE6.0 有左右两个箭头，中间由竖线分隔开的光标。用于标示项目或标题栏可以被水平改变尺寸。
 - crosshair :　 简单的十字线光标。
@@ -125,3 +123,45 @@ p {
 - vertical-text :　 IE6.0 用于标示可编辑的垂直文本的光标。通常是大写字母 I 旋转90度的形状。
 - wait :　 用于标示程序忙用户需要等待的光标。通常是沙漏或手表的形状。
 - *-resize :　 用于标示对象可被改变尺寸方向的箭头光标。
+
+### 文本阴影
+
+```css
+text-shadow: 20px 27px 22px pink;
+```
+
+参数解释：水平位移 垂直位移 模糊程度 阴影颜色。
+
+- 利用多阴影制作凹凸效果
+
+  ```html
+   <style>
+      body {
+        background-color: #666;
+      }
+  
+      div {
+        font-size: 100px;
+        font-weight: bold;
+        font-family: "Microsoft Yahei";
+        color: #666;
+      }
+  
+      .tu {
+        text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+      }
+  
+      .ao {
+        text-shadow: -1px -1px 1px #000, 1px 1px 1px #fff;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div class="ao">我凹进去</div>
+    <div class="tu">我突出来</div>
+  
+  </body>
+  ```
+
+  <img src="./pic/02-06.png">

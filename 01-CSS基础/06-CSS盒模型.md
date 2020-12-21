@@ -178,3 +178,43 @@ border-right-color:blue;
 }
 ```
 
+### 边框圆角：`border-radius` 
+
+边框的每个圆角，本质上是一个圆，圆有**水平半径**和**垂直半径**：如果二者相等，就是圆；如果二者不等， 就是椭圆。
+
+单个属性的写法：
+
+```css
+	border-top-left-radius: 60px 120px;        //参数解释：水平半径   垂直半径
+
+	border-top-right-radius: 60px 120px;
+
+	border-bottom-left-radius: 60px 120px;
+
+	border-bottom-right-radius: 60px 120px;
+```
+
+复合写法：
+
+```css
+	border-radius: 60px/120px;             //参数：水平半径/垂直半径
+
+	border-radius: 20px 60px 100px 140px;  //从左上开始，顺时针赋值。如果当前角没有值，取对角的值
+
+	border-radius: 20px 60px;
+```
+
+最简洁的写法：（四个角的半径都相同时）
+
+```css
+	border-radius: 60px;
+```
+
+### 边框阴影：`box-shadow` 
+
+```css
+	box-shadow: 水平偏移 垂直偏移 模糊程度 阴影大小 阴影颜色
+
+	box-shadow: 15px 21px 48px -2px #666;
+```
+
