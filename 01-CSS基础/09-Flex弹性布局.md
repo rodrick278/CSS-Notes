@@ -31,7 +31,7 @@ Flex 是 Flexible Box 的缩写，意为"弹性布局"，用来为盒状模型�
 
 ## 1.【容器】属性
 
-- [flex-direction](#1-1-flex-direction:主轴方向) 
+- [flex-direction](#11-flex-direction主轴方向) 
 - flex-wrap
 - flex-flow
 - justify-content
