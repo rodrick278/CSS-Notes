@@ -85,7 +85,7 @@ Flex 是 Flexible Box 的缩写，意为"弹性布局"，用来为盒状模型�
 - `space-between`：两端对齐，项目之间的间隔都相等。
 - `space-around`：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。
 
-![img](D:\MyCode\CSS-Notes\01-CSS基础\pic\09-03.png)
+<img src="./pic/09-03.png">
 
 ### 1.5 align-items:交叉轴上对齐
 
@@ -101,7 +101,7 @@ Flex 是 Flexible Box 的缩写，意为"弹性布局"，用来为盒状模型�
 - `baseline`: 项目的第一行文字的基线对齐。
 - `stretch`（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。
 
-![img](D:\MyCode\CSS-Notes\01-CSS基础\pic\09-04.png)
+<img src="./pic/09-04.png">
 
 ### 1.6 align-content:多行对齐方式
 
@@ -118,7 +118,7 @@ Flex 是 Flexible Box 的缩写，意为"弹性布局"，用来为盒状模型�
 - `space-around`：每根轴线两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍。
 - `stretch`（默认值）：轴线占满整个交叉轴。
 
-![img](D:\MyCode\CSS-Notes\01-CSS基础\pic\09-05.png)
+<img src="./pic/09-05.png">
 
 ## 2. 【项目】属性
 
