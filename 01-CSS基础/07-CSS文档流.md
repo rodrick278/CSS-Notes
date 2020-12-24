@@ -30,9 +30,9 @@ HTML知识中，标签可以分为：文本级、容器级：
 
 - **行内元素 -> 块级元素**：设置 `display: block;` 
 
->  但是即便可以转换，也无法直接达到既可以设宽高又在行内的效果。所以我们就要用到我们的浮动与定位：
+- **二者兼具**：设置 `display: inline-block;`   **行内且有宽高**
 
-## 浮动
+## 浮动布局
 
 效果如下：
 
@@ -84,7 +84,29 @@ clear:both
 
 如图，给 ch1 添加 `clear` 后，相当于**指定他需要到浮动元素下面**，所以他就跑到了浮动的 child 下面，这样就会把父级 div 撑起，如果没有 `clear=both` 的话，ch1 会正常按照标准流位置存在👇：
 
-<img src="./pic/07-10.png" width=70%>
+
+
+#### 利用 `::after`
+
+```css
+.child {
+  	float: left;
+    background: blue;
+    width: 100px;
+    height: 40px;
+
+}
+
+.parent::after {
+    display: block;
+    clear: both;
+    content: '';
+}
+```
+
+<img src="./pic/07-23.png" width=60%>
+
+
 
 ## 文档流中的 margin
 
