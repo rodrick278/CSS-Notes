@@ -490,7 +490,7 @@ grid-template-areas:"a . b"
 
 ### 4. justify-self/align-self/place-self 针对单个项目的位置调整
 
-这三者的用法和 [`justify-items/align-items/place-item`](#6-justify-items/align-items/place-items-单元格内容水平垂直位置)，区别只是针对单个项目。
+这三者的用法和 [`justify-items/align-items/place-item`](#6-justify-itemsalign-itemsplace-items-单元格内容水平垂直位置)，区别只是针对单个项目。
 
 ```css
 .item {
