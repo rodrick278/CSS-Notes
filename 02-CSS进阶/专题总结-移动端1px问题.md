@@ -73,7 +73,7 @@
 }
 ```
 
-<img src="./pic/016.png" width=90%>
+<img src="./pic/020.png" width=90%>
 
 ### 2.2 viewport的scale
 
