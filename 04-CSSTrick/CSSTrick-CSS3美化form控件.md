@@ -187,17 +187,17 @@ label.bui-checkbox-label.bui-checkbox-anim .bui-checkbox {
 <h2>开关按钮</h2>
 <h3>一般简单的背景动画</h3>
 <label class="bui-switch-label bui-switch-anim">
-  <input type="checkbox" name="s" /><i class="bui-switch"></i>
+  <input type="checkbox" name="s" /><i class="bui-switch use-anim"></i>
 </label>
 <label class="bui-switch-label bui-switch-anim">
-  <input type="checkbox" checked="" name="s" /><i class="bui-switch"></i>
+  <input type="checkbox" checked="" name="s" /><i class="bui-switch use-anim"></i>
 </label>
 <h3>简单的背景动画</h3>
 <label class="bui-switch-label bui-switch-animbg">
-  <input type="checkbox" name="s" /><i class="bui-switch"></i>
+  <input type="checkbox" name="s" /><i class="bui-switch use-anim"></i>
 </label>
 <label class="bui-switch-label bui-switch-animbg">
-  <input type="checkbox" checked="" name="s" /><i class="bui-switch"></i>
+  <input type="checkbox" checked="" name="s" /><i class="bui-switch use-anim"></i>
 </label>
 <h3>无动画</h3>
 <label class="bui-switch-label ">
@@ -225,37 +225,19 @@ label.bui-switch-label input {
   position: absolute;
   opacity: 0;
 }
-/* 选中：底板 */
-label.bui-switch-label input:checked {
-  border-color: #64bd63;
-  background-color: #64bd63;
-  box-shadow: #64bd63 0 0 0 16px inset;
+/* 圆圈样式 */
+label.bui-switch-label .bui-switch:before {
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  border-radius: 20px;
+  width: 23px;
+  height: 23px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+  content: "";
 }
-/* 选中：圆圈 */
-label.bui-switch-label input:checked:before {
-  left: 37px;
-}
-/* 禁用：圆圈 */
-label.bui-switch-label input:disabled + .bui-switch:before {
-  background-color: #c1c1c1;
-}
-/* 禁用+已选：圆圈 */
-label.bui-switch-label input:disabled:checked + .bui-switch:before {
-  background-color: #c1c1c1;
-}
-/* 禁用+未选：底板 */
-label.bui-switch-label input:disabled + .bui-switch {
-  border: solid 1px #dfdfdf;
-  background-color: #e8e8e8;
-}
-/* 禁用+已选：底板 */
-label.bui-switch-label input:disabled:checked + .bui-switch {
-  border: solid 1px #dfdfdf;
-  background-color: #e8e8e8;
-  box-shadow: #e8e8e8 0 0 0 16px inset;
-}
-
-/* 这个是底板 */
+/* 底板样式 */
 label.bui-switch-label .bui-switch {
   display: inline-block;
   position: relative;
@@ -274,56 +256,61 @@ label.bui-switch-label .bui-switch {
   -moz-user-select: none;
   -ms-user-select: none;
 }
-/* before 是内部圆圈 */
-label.bui-switch-label .bui-switch:before {
-  position: absolute;
-  left: 1px;
-  top: 1px;
-  border-radius: 20px;
-  width: 23px;
-  height: 23px;
-  background-color: #fff;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
-  content: "";
+/* 圆圈选中 样式 */
+label.bui-switch-label input:checked + .bui-switch:before {
+  left: 27px;
 }
-/* 选中：底板样式 */
+/* 底板选中 样式 */
 label.bui-switch-label input:checked + .bui-switch {
   border-color: #64bd63;
   background-color: #64bd63;
   box-shadow: #64bd63 0 0 0 16px inset;
 }
-/* 选中：圆圈位置 */
-label.bui-switch-label input:checked + .bui-switch:before {
-  left: 27px;
-}
-/* 下面都是动画 */
-/* 选<->不选：圆圈动画 控制left */
-label.bui-switch-label.bui-switch-anim .bui-switch:before {
+/* 圆圈动画 是通用的*/
+label.bui-switch-label .use-anim.bui-switch:before {
   transition: left .3s;
 
   -webkit-transition: left .3s;
 }
-/* 选<->不选：背景变化 只控制选中变绿 */
+
+/* 一般简单的背景动画 */
+/* 底板 选中 动画 */
 label.bui-switch-label.bui-switch-anim input:checked + .bui-switch {
-  transition: border ease 4s, box-shadow ease 4s, background-color ease 12s;
+  background-color: #64bd63;
+
+  /* 注意 box-shadow 的设置 */
+  box-shadow: #64bd63 0 0 0 16px inset;
+  transition: border ease .4s, box-shadow ease .4s, background-color ease 1.2s;
 
   -webkit-transition: border ease .4s, box-shadow ease .4s, background-color ease 1.2s;
 }
 
-/* 纯变化背景 */
-/* 圆圈变化 */
-label.bui-switch-label.bui-switch-animbg .bui-switch:before {
-  transition: left .3s;
-
-  -webkit-transition: left .3s;
-}
-/* 选<->不选：背景变化 只控制选中变绿 */
+/* 简单的背景动画 */
+/* 底板 选中 动画 */
 label.bui-switch-label.bui-switch-animbg input:checked + .bui-switch {
   background-color: #64bd63;
+
+  /* 注意 box-shadow 的设置 */
   box-shadow: #dfdfdf 0 0 0 0 inset;
   transition: border-color .4s, background-color ease .4s;
 
   -webkit-transition: border-color .4s, background-color ease .4s;
+}
+
+/* 禁用 圆圈 */
+label.bui-switch-label input:disabled + .bui-switch:before {
+  background-color: #c1c1c1;
+}
+/* 禁用 未选 底板 */
+label.bui-switch-label input:disabled + .bui-switch {
+  border: solid 1px #dfdfdf;
+  background-color: #e8e8e8;
+}
+/* 禁用 选择 底板 */
+label.bui-switch-label input:disabled:checked + .bui-switch {
+  border: solid 1px #dfdfdf;
+  background-color: #e8e8e8;
+  box-shadow: #e8e8e8 0 0 0 16px inset;
 }
 ```
 
