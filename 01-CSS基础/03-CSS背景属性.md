@@ -222,16 +222,15 @@ background-image: radial-gradient(100px at center,yellow ,green);
 
 ### background-attachment
 
-设置背景图片是否跟着滚动条一起移动。 属性值可以是：
+设置背景图片根据谁来进行滚动。 属性值可以是：
 
-- `fixed`（背景就会被固定住，不会被滚动条滚走）。
-- `scroll`（与fixed属性相反，默认属性）
+- `fixed` 不随文档和内容滚动。
+- `scroll`（默认属性）随文档整体移动， 而不是随着它的内容滚动。
+- `local` 既跟随文档滚动，又跟随内容滚动。
 
-`background-attachment:fixed` 效果：
+整体效果：
 
 ![](./pic/03-03.gif)
-
-
 
 
 

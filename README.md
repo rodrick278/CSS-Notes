@@ -50,10 +50,12 @@
   - [bug解决](03-CSS面试/bug解决.md)
   
 - CSSTrick
-
   - [CSS3美化form控件](04-CSSTrick/CSS3美化form控件.md)
   
   - [画个三角形](04-CSSTrick/画个三角形.md)
+  
+  - [滚动视差](04-CSSTrick/滚动视差.md)
+  
   
   
 
