@@ -51,7 +51,8 @@
   
 - CSSTrick
 
-  - [CSSTrick-CSS3美化form控件](04-CSSTrick/CSSTrick-CSS3美化form控件.md)
-
+  - [CSS3美化form控件](04-CSSTrick/CSS3美化form控件.md)
+- [画个三角形](04-CSSTrick/画个三角形.md)
+  
   
 
