@@ -213,8 +213,10 @@ border-right-color:blue;
 ### 边框阴影：`box-shadow` 
 
 ```css
-	box-shadow: 水平偏移 垂直偏移 模糊程度 阴影大小 阴影颜色
+	box-shadow: 水平偏移 垂直偏移 模糊程度 阴影大小 阴影颜色 inset(将外部阴影 (outset) 改为内部阴影)
 
-	box-shadow: 15px 21px 48px -2px #666;
+	box-shadow: 15px 21px 48px -2px #666 inset;
+	/* 多个阴影逗号分隔 */
+	box-shadow: 10px 10px 5px red,10px 10px 5px #888888 inset;
 ```
 
