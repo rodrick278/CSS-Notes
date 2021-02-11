@@ -132,7 +132,7 @@ background-image: linear-gradient(to right, yellow, green);
 #### 径向渐变
 
 ```
-background-image: radial-gradient(辐射的半径大小, 中心的位置, 起始颜色, 终止颜色);
+background-image: radial-gradient(辐射的半径大小 at 中心的位置, 起始颜色, 终止颜色);
 
 background-image: radial-gradient(100px at center,yellow ,green);
 ```
