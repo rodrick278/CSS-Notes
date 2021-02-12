@@ -171,7 +171,7 @@ grid-template-columns:100px auto auto;
 }
 ```
 
-### 3. column-gap/column-gap/gap 间隔
+### 3. row-gap/column-gap/gap 间隔
 
 `row-gap`属性设置行与行的间隔（行间距），`column-gap`属性设置列与列的间隔（列间距）。
 
@@ -184,7 +184,7 @@ grid-template-columns:100px auto auto;
     grid-template-rows: repeat(3, 50px);
     column-gap: 10px;
     row-gap: 20px;
-    /* gap: 10px 20px; */
+    /* gap: 20px 10px; 下图写错了*/
 }
 ```
 

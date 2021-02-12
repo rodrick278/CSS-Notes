@@ -84,7 +84,7 @@ clear:both
 
 如图，给 ch1 添加 `clear` 后，相当于**指定他需要到浮动元素下面**，所以他就跑到了浮动的 child 下面，这样就会把父级 div 撑起，如果没有 `clear=both` 的话，ch1 会正常按照标准流位置存在👇：
 
-
+<img src="./pic/07-10.png" width=70%>
 
 #### 利用 `::after`
 

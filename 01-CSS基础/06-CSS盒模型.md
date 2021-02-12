@@ -210,7 +210,7 @@ border-right-color:blue;
 	border-radius: 60px;
 ```
 
-### 边框阴影：`box-shadow` 
+### 边框阴影：`box-shadow`
 
 ```css
 	box-shadow: 水平偏移 垂直偏移 模糊程度 阴影大小 阴影颜色 inset(将外部阴影 (outset) 改为内部阴影)
