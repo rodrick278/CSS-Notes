@@ -164,3 +164,24 @@ text-shadow: 20px 27px 22px pink;
   ```
 
   <img src="./pic/02-06.png">
+
+### 文本溢出
+
+```css
+text-overflow: clip|ellipsis|string;
+text-overflow: 直接修剪文本|用省略号代替修剪文本|用指定字符串代替修剪文本;
+```
+
+使用：
+
+注意使用这个属性必须配合存在溢出特性的情况才行，比如这里使用了 `white-space:nowrap;` 和 `overflow:hidden;`
+
+```css
+div.test
+{
+  white-space:nowrap; 
+  width:16em; 
+  overflow:hidden; 
+  text-overflow: ellipsis
+}
+```
