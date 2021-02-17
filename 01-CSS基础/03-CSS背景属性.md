@@ -22,7 +22,9 @@
   #ccc   浅灰
   ```
 
-  
+> **Tip：关于背景色的填充范围**
+>
+> `background-color` 不论 `box-sizing` 是什么，**始终填充**的是 `content + padding +border` ，但是如果 `border` **是有颜色的，则会覆盖背景色**，将 `border` 的颜色设置成 `transparent` 则会发现其实是有背景色的。
 
 ### background-image
 
