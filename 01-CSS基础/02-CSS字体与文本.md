@@ -210,7 +210,7 @@ CJK 文本不断行。 Non-CJK 文本表现同 `normal`。
 
 
 
-看个例子：
+**看个例子👇：**
 
 对应这样的文本：
 
@@ -242,13 +242,17 @@ Taumatawhakatangihangakoauauotamateaturipukakapikimaungahoronukupokaiwhenuakitan
 
 **anywhere 和 break-word 区别**
 
-引用[张旭鑫](https://www.zhangxinxu.com/wordpress/2020/03/css-overflow-wrap-anywhere/)的一段话
+引用 [张旭鑫-CSS overflow-wrap新属性值anywhere是干嘛用的？](https://www.zhangxinxu.com/wordpress/2020/03/css-overflow-wrap-anywhere/) 的一个例子：
+
+> 注：图二 'word-break' => 'break-word'
 
 > 在正常状态下，`anywhere`和`break-word`的表现是一样的，即如果行中没有其他可接受的断点，则可以在任何点断开原本不可断开的字符串（如长单词或URL），并且在断点处不插入连字符。
 >
 > 用人话解释就是连续的英文字符如果可以不用断就不断，如果实在不行，就断开，因此相比break-all可能会留白。
+>
+> `anywhere`和`break-word`的不同之处在于，在`overflow-wrap:anywhere`计算最小内容尺寸的时候会考虑软换行，而`overflow-wrap:break-word`不会考虑软换行。
 
-<img src="https://image.zhangxinxu.com/image/blog/202003/2020-03-18_161120.png">
+<img src="https://image.zhangxinxu.com/image/blog/202003/2020-03-18_161120.png"><img src="https://image.zhangxinxu.com/image/blog/202003/3-66_anywhere.png">
 
 
 
