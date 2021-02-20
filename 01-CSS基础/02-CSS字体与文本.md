@@ -185,3 +185,70 @@ div.test
   text-overflow: ellipsis
 }
 ```
+
+###  文本换行
+
+#### word-break
+
+语法：`word-break: normal|break-all|keep-all|break-word;`
+
+- normal
+
+使用默认的断行规则。
+
+- break-all
+
+对于**non-CJK (CJK 指中文/日文/韩文) 文本**，可在任意字符间断行。
+
+- keep-all
+
+CJK 文本不断行。 Non-CJK 文本表现同 `normal`。
+
+- break-word
+
+他的效果是`word-break: normal` 和 `overflow-wrap: anywhere` 的合，不论 [`overflow-wrap`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/overflow-wrap)的值是多少。
+
+
+
+看个例子：
+
+对应这样的文本：
+
+```
+Honorificabilitudinitatibus califragilisticexpialidocious
+Taumatawhakatangihangakoauauotamateaturipukakapikimaungahoronukupokaiwhenuakitanatahu
+次の単語グレートブリテンおよび北アイルランド連合王国で本当に大きな言葉
+```
+
+
+
+<img src="./pic/02-07.png">
+
+####  overflow-wrap[以前叫 word-wrap]
+
+语法：`overflow-wrap: normal|anywhere|break-word;`
+
+- normal
+
+行只能在正常的单词断点处中断。（例如两个单词之间的空格）。
+
+- anywhere
+
+管你单词到哪里，说断就断
+
+- break-word
+
+表示如果行内没有多余的地方容纳该单词到结尾，则那些正常的不能被分割的单词会被强制分割换行。
+
+**anywhere 和 break-word 区别**
+
+引用[张旭鑫](https://www.zhangxinxu.com/wordpress/2020/03/css-overflow-wrap-anywhere/)的一段话
+
+> 在正常状态下，`anywhere`和`break-word`的表现是一样的，即如果行中没有其他可接受的断点，则可以在任何点断开原本不可断开的字符串（如长单词或URL），并且在断点处不插入连字符。
+>
+> 用人话解释就是连续的英文字符如果可以不用断就不断，如果实在不行，就断开，因此相比break-all可能会留白。
+
+<img src="https://image.zhangxinxu.com/image/blog/202003/2020-03-18_161120.png">
+
+
+
