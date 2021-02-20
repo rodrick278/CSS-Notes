@@ -1,7 +1,7 @@
 <div align="center">
   <h1>
   CSS-Notes
-  <h1>
+  </h1>
     <img alt="GitHub license" src="https://img.shields.io/github/license/rodrick278/CSS-Notes">
     <img alt="GitHub stars" src="https://img.shields.io/github/stars/rodrick278/CSS-Notes">
     <img alt="GitHub forks" src="https://img.shields.io/github/forks/rodrick278/CSS-Notes">
