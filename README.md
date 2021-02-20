@@ -66,6 +66,8 @@
   
   - [滚动条美化](04-CSSTrick/滚动条美化.md)
   
+  - [hover显示的搜索框](04-CSSTrick/hover显示的搜索框.md)
+  
   
   
   
