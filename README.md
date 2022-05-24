@@ -3,7 +3,7 @@
   不要再为CSS发愁
   </h1>
 
-<img alt="cover" :src="$withBase('/cover.jfif')" width="50%"/>
+<img alt="cover" src="./docs/.vuepress/public/cover.jfif" width="50%"/>
 <br/>
     <img alt="GitHub license" src="https://img.shields.io/github/license/rodrick278/CSS-Notes"/>
     <img alt="GitHub stars" src="https://img.shields.io/github/stars/rodrick278/CSS-Notes"/>
